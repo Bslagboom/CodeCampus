@@ -10,6 +10,7 @@ const CourseCard = ({ course }) => {
 
   const openCourseVideo = (url) => {
     return () => {
+      window.open(url, '_blank');
       console.log('Video URL:', url);
     };
   };
